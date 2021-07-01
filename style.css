@@ -10,6 +10,9 @@ body{
 }
 .navbar{
     display: flex;
+    align-items: center;
+    background-color: #fff;
+    /* justify-content: space-around; */
 }
 .navbar__brand{
     width: 100px;
@@ -26,4 +29,26 @@ body{
         );
     color: #fff;
     border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.nav__item:hover{
+    border: 2px solid blue;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 2px 30px;
+    }
+}
+@media (min-width: 1020px){
+    .navbar__brand{
+        width: 150px;
+    }
+    .nav__item{
+        padding: 20px;
+        font-size: 20px;
+    }
 }
